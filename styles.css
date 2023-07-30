@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.cloud {
+    width: 100px;
+    /* Adjust the width of the cloud image as needed */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: cloudMove linear infinite;
+}
+
+@keyframes cloudMove {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: -100px;
+    }
+}

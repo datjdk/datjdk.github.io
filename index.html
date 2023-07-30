@@ -4,6 +4,7 @@
 <head>
     <!-- Include the Dancing Script font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>I 💖 U</title>
     <style>
         body {
@@ -14,7 +15,7 @@
             margin: 0;
             background-color: #f9f9f9;
             overflow: hidden;
-            background-image: url("./bg.jpg");
+            background-image: url("./img/bg.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -257,7 +258,7 @@
 <body>
 
     <div class="gift-card-container">
-        <img class="gift-card-image" src="./pig-pizza.JPG" alt="Gift Card Image">
+        <img class="gift-card-image" src="./img/pig-pizza.JPG" alt="Gift Card Image">
         <div class="gift-card-content">
             <div class="gift-card-title">Hai Néo &hearts; Eny</div>
             <audio id="audio-player" controls>
@@ -283,6 +284,9 @@
         </div>
     </div>
 
+    <div class="cloud-container" id="cloudContainer"></div>
+    <script src="script.js"></script>
+
     <button id="startButton" onclick="toggleShow(); toggleAudio();">Start</button>
 
     <script>
@@ -299,7 +303,7 @@
 
         const cakeSymbols = ["🧁", "🍬", "🎂", "🍭", "🍩", "🍧", "🍪", "&#127880;"];
 
-        const flowerSymbols = ["🌸", "🌺", "🌻", "🌼", "🌷"];
+        const flowerSymbols = ["🌻", "🌼", "🌷"];
 
         const colors = [
             {
@@ -540,13 +544,13 @@
         function startShow() {
             if (!showRunning) {
                 showRunning = true;
-                intervalId = setInterval(createRandomHeart, 100);
+                intervalId = setInterval(createRandomHeart, 500);
                 intervalId2 = setInterval(function () {
-                    createRandomSymbols(flowerSymbols, 1000, 5000);
-                }, 100);
+                    createRandomSymbols(flowerSymbols, 500, 2000);
+                }, 1000);
                 intervalId3 = setInterval(function () {
-                    createRandomSymbols(cakeSymbols, 900, 3000)
-                }, 200);
+                    createRandomSymbols(cakeSymbols, 500, 2000)
+                }, 1000);
             }
         }
 

@@ -456,7 +456,7 @@
             heart.style.fontSize = heartSize + "px";
             const spanElement = heart.querySelector("span");
             spanElement.style.fontSize = heartSize / 6 + "px";
-            spanElement.style.color = colorSetting.textColor;
+            spanElement.style.color = colorSetting.textColor + " !important";
             heart.style.animationName = animation;
             heart.style.color = colorSetting.color;
 
@@ -467,7 +467,7 @@
             const biggerHeartSize = heartSize + 5;
             biggerHeart.style.fontSize = biggerHeartSize + "px";
             biggerHeart.style.animationName = animation;
-            biggerHeart.style.color = colorSetting.borderColor;
+            biggerHeart.style.color = colorSetting.borderColor + " !important";;
 
             // border-heart 2
             const biggerHeart2 = document.createElement("div");
@@ -476,7 +476,7 @@
             const biggerHeartSize2 = heartSize + 10;
             biggerHeart2.style.fontSize = biggerHeartSize2 + "px";
             biggerHeart2.style.animationName = animation;
-            biggerHeart2.style.color = "#333333";
+            biggerHeart2.style.color = "#333333" + " !important";;
 
             heartContainer.appendChild(heart);
             heartContainer.appendChild(biggerHeart);

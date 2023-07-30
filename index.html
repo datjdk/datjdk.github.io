@@ -60,7 +60,7 @@
             position: absolute;
             top: -5px;
             /* Adjust positioning to be behind the main heart */
-            left: -5px;
+            left: -3px;
             /* Adjust positioning to be behind the main heart */
             z-index: -1;
             /* Place the black heart behind the main heart */
@@ -72,9 +72,9 @@
             font-size: 300px;
             /* color: black; */
             position: absolute;
-            top: 0px;
+            top: -5px;
             /* Adjust positioning to be behind the main heart */
-            right: -15px;
+            right: -7px;
             /* Adjust positioning to be behind the main heart */
             z-index: -2;
             /* Place the black heart behind the main heart */
@@ -467,7 +467,7 @@
             const biggerHeartSize = heartSize;
             biggerHeart.style.fontSize = biggerHeartSize + "px";
             biggerHeart.style.animationName = animation;
-            biggerHeart.style.color = colorSetting.borderColor + " !important";;
+            biggerHeart.style.color = "#333333" + " !important";
 
             // border-heart 2
             const biggerHeart2 = document.createElement("div");
@@ -476,7 +476,7 @@
             const biggerHeartSize2 = heartSize;
             biggerHeart2.style.fontSize = biggerHeartSize2 + "px";
             biggerHeart2.style.animationName = animation;
-            biggerHeart2.style.color = "#333333" + " !important";;
+            biggerHeart2.style.color = "#333333" + " !important";
 
             heartContainer.appendChild(heart);
             heartContainer.appendChild(biggerHeart);

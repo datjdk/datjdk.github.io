@@ -1,3 +1,4 @@
+
 // Get the container element where clouds will be added
 const container = document.getElementById('cloudContainer');
 

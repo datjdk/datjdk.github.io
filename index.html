@@ -452,7 +452,8 @@
 
             const heart = document.createElement("div");
             heart.className = "heart";
-            heart.innerHTML = `${heartSymbol}<span>i &hearts; u</span>`;
+            const heartText = getRandomSymbol(["Hai Néo", "Eny"]);
+            heart.innerHTML = `${heartSymbol}<span>${heartText}</span>`;
             heart.style.fontSize = heartSize + "px";
             const spanElement = heart.querySelector("span");
             spanElement.style.fontSize = heartSize / 6 + "px";

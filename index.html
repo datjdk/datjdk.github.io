@@ -464,7 +464,7 @@
             const biggerHeart = document.createElement("div");
             biggerHeart.className = "heart border-heart-1";
             biggerHeart.innerHTML = `${heartSymbol}`;
-            const biggerHeartSize = heartSize + 5;
+            const biggerHeartSize = heartSize;
             biggerHeart.style.fontSize = biggerHeartSize + "px";
             biggerHeart.style.animationName = animation;
             biggerHeart.style.color = colorSetting.borderColor + " !important";;
@@ -473,14 +473,14 @@
             const biggerHeart2 = document.createElement("div");
             biggerHeart2.className = "heart border-heart-2";
             biggerHeart2.innerHTML = `${heartSymbol}`;
-            const biggerHeartSize2 = heartSize + 10;
+            const biggerHeartSize2 = heartSize;
             biggerHeart2.style.fontSize = biggerHeartSize2 + "px";
             biggerHeart2.style.animationName = animation;
             biggerHeart2.style.color = "#333333" + " !important";;
 
             heartContainer.appendChild(heart);
-            // heartContainer.appendChild(biggerHeart);
-            // heartContainer.appendChild(biggerHeart2);
+            heartContainer.appendChild(biggerHeart);
+            heartContainer.appendChild(biggerHeart2);
             document.body.appendChild(heartContainer);
 
             setTimeout(() => heartContainer.remove(), getRandomNumber(1000, 3000));

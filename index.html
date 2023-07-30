@@ -554,7 +554,7 @@
                 showRunning = false;
                 clearInterval(intervalId);
                 clearInterval(intervalId2);
-                // clearInterval(intervalId3);
+                clearInterval(intervalId3);
             }
         }
 
@@ -577,6 +577,14 @@
 
             audioPlaying = !audioPlaying; // Toggle the audioPlaying state
         }
+
+        // Function to replay the audio when it finishes playing
+        function replayAudio() {
+            audioPlayer.currentTime = 0; // Reset the current time to the beginning
+            audioPlayer.play(); // Start playback again
+        }
+
+        audioPlayer.addEventListener("ended", replayAudio);
 
     </script>
 </body>

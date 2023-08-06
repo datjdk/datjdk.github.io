@@ -165,7 +165,8 @@
             /* Set the position to relative */
             z-index: 999;
             /* Set a high z-index value */
-            width: 300px;
+            /* height: 420px; */
+            width: 350px;
             background-color: #fff;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
@@ -176,7 +177,7 @@
 
         .gift-card-image {
             width: 100%;
-            height: 200px;
+            height: 350px;
             object-fit: cover;
         }
 
@@ -279,11 +280,11 @@
     <!-- <div class="cloud-container" id="cloudContainer"></div> -->
 
     <div class="gift-card-container">
-        <img class="gift-card-image" src="./img/pig-pizza.JPG" alt="Gift Card Image">
+        <img class="gift-card-image" src="./img/sorry_gif.gif" alt="Gift Card Image">
         <div class="gift-card-content">
             <div class="gift-card-title">Hai Néo &hearts; Eny</div>
             <audio id="audio-player" controls>
-                <source src="./la_anh.mp3" type="audio/mpeg">
+                <source src="./music/a_loi.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </div>
@@ -475,7 +476,7 @@
 
             const heart = document.createElement("div");
             heart.className = "heart";
-            const heartText = getRandomSymbol(["Hai Néo", "Eny"]);
+            const heartText = getRandomSymbol(["I'm sorry", "Sorry Eny"]);
             heart.innerHTML = `${heartSymbol}<span>${heartText}</span>`;
             heart.style.fontSize = heartSize + "px";
             const spanElement = heart.querySelector("span");
